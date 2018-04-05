@@ -39,8 +39,8 @@ public class Deck {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
         cards = new ArrayList<Card>();
         for(int i = 0; i < ranks.length; i++){
-            Card aCard = new Card(ranks[i], suits[i], values[i]);
-            cards.add(aCard);
+            Card card1 = new Card(ranks[i], suits[i], values[i]);
+            cards.add(card1);
         }
         size = cards.size();
         //shuffle();
@@ -73,6 +73,7 @@ public class Deck {
      */
     public void shuffle() {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+
     }
 
     /**
@@ -82,14 +83,13 @@ public class Deck {
      */
     public Card deal() {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-        size = size -= 1;
+         size = size -= 1;
         if (size > 0){
          return cards.get(size); 
         }
         return null;
-        
+      
     }
-
     /**
      * Generates and returns a string representation of this deck.
      * @return a string representation of this deck.
